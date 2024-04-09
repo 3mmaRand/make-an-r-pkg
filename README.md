@@ -27,16 +27,16 @@ License</a>.
 
 ## Summary
 
-In this talk I'll be covering why you you might make an R package and
-how you can make one (spoilers: there are more reasons than you probably
-think; it's easier than you probably think). The talk should be
+In this talk I'll be covering *why* you might make an R package and
+*how* you can make one (spoilers: there are more reasons than you
+probably think; it's easier than you probably think). The talk should be
 accessible to people with minimal R experience and immediately useful to
 those who have been using R for a while. I will discuss where packages
 come, where they live on your computer and the different states a
-package can be in. I will then live code making a minimal package using
-the **`devtools`** approach. I will show how to add functions,
-documentation, dependencies and a license. I will also show how to check
-the package and how to use it interactively.
+package can be in. I will then live-code making a minimal package using
+the **`devtools`** approach. We will add functions, documentation,
+dependencies and a license. I will also show you how to check the
+package and how to use it interactively.
 
 ## Learning Objectives
 
@@ -66,4 +66,3 @@ You can verify your system is set up by running:
 `devtools::has_devel()`
 
 in the console
-
