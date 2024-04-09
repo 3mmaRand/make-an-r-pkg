@@ -57,8 +57,7 @@ by the end of this session you will able to:
 If you want to code along with the live coding you will need:
 
 -   [R and RStudio](prerequisite-guides/install-r-rstudio.md)
--   [R build toolchain](install-pkg-dev-tools.md): Rtools(windows) or
-    XCode (mac) or r-base-dev
+-   [R build toolchain](prerequisite-guides/install-pkg-dev-tools.md): Rtools(windows) or XCode (mac) or r-base-dev
 -   the following packages: `devtools` and `assertthat`
 
 You can verify your system is set up by running:
