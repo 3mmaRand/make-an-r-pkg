@@ -1,15 +1,14 @@
 ---
 title: "📦<br>You can make an R package too!"
-subtitle: "UoY, Bioinformatics group"
 author: "Emma Rand"
-date: "<br>🔗 [bit.ly/3mma-bio-pkg](https://bit.ly/3mma-bio-pkg)"
+date: "<br>🔗 [bit.ly/3mma-pkg](https://bit.ly/3mma-pkg)"
 format:
   revealjs: 
     theme: [simple, emma.scss]
     slide-number: true
     chalkboard: true
     preview-links: auto
-    footer: <https://bit.ly/3mma-bio-pkg>
+    footer: <https://bit.ly/3mma-pkg>
     margin: 0.07
     code-link: true
 execute:
