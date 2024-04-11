@@ -9,14 +9,14 @@ Slides: [You can make an R package too!](https://bit.ly/3mma-bio-pkg)
 
 Based on
 
--   [R Packages](https://r-pkgs.org/) [@wickham2020]
+-   [R Packages (2e)](https://r-pkgs.org/) by Hadley Wickham and Jennifer Bryan
 
--   Data Science for Modern and Open Research: You can make an R package
-    too! [@rand2021]
+-   [Data Science for Modern and Open Research: You can make an R package
+    too!](https://3mmarand.github.io/DDA/slides/you-can-make-an-r-package.html#1) Talk at the Danish Diabetes Academy Winter School for Postdocs 2021
 
 -   [Forwards Package development
-    modules](https://github.com/forwards/workshops)
-    [@rand-cetinkaya-rundel]
+    modules](https://github.com/forwards/workshops) by Emma Rand and Mine Cetinkaya-Rundel.
+    
 
 Licensed under a
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative

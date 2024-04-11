@@ -1,7 +1,6 @@
 ---
 title: "📦<br>You can make an R package too!"
 author: "Emma Rand"
-date: "<br>🔗 [bit.ly/3mma-pkg](https://bit.ly/3mma-pkg)"
 format:
   revealjs: 
     theme: [simple, emma.scss]
@@ -23,14 +22,14 @@ bibliography: references.bib
 -   Where packages come from and where do they live?
 -   Package States
 -   How to make a minimal documented package and check it using the
-    `devtools`[@wickham2021] approach
+    `devtools`[@devtools] approach
 -   Components of a minimal package
 
 ::: aside
-Based on [R Packages](https://r-pkgs.org/) [@wickham2020], Data Science
+Based on [R Packages](https://r-pkgs.org/) [@wickham-bryan], Data Science
 for Modern and Open Research: You can make an R package too!
 [@rand2021], [Forwards Package development
-modules](https://github.com/forwards/workshops) [@rand]
+modules](https://github.com/forwards/workshops) [@rand-cetinkaya-rundel]
 :::
 
 ## Prerequisites
@@ -40,11 +39,10 @@ You should have
 -   R and RStudio
 -   R build toolchain: Rtools(windows) or XCode (mac) or r-base-dev
 -   `devtools` and `assertthat`
--   optionally git, a GitHub account and verified it can talk to RStudio
 
 ## Learning Objectives {.smaller}
 
-by the end of this session you will able to:
+By the end of this session you will able to:
 
 -   explain the rationale for writing packages
 -   describe the different states a package can be in
@@ -96,30 +94,6 @@ anyway!
 
 ... making a package is just a short step beyond that
 
-## Script vs package
-
-::: columns
-::: {.column width="35%"}
-### Script
-
--   one-off data analysis
--   defined by `.R` extension
--   `library()` calls
--   documentation in \# comments
--   `source()`
-:::
-
-::: {.column width="65%"}
-### Package
-
--   defines reusable components
--   defined by presence of `DESCRIPTION` file
--   Required packages specified in `DESCRIPTION`, made available in
-    `NAMESPACE` file
--   documentation in files and `Roxygen` comments
--   Install and restart
-:::
-:::
 
 ## Be nice to future you
 
@@ -162,34 +136,17 @@ In a library! In
 
 ```{r}
 #| eval: true
-R.home()
+.libPaths()
 ```
 
-The R home directory is the top-level directory of your R installation.
-
-Note: this is **not** the same as your working directory or your home
-directory.
-
-## Your R installation
+::: {style="font-size: 70%;"}
 
 ```{r}
 #| eval: true
-list.files(R.home())
+dir(.libPaths())
 ```
 
-## Your library
-
-```{r}
-#| eval: true
-.Library
-```
-
-## Your library
-
-```{r}
-#| eval: true
-dir(.Library)
-```
+:::
 
 # Package states
 
@@ -212,13 +169,6 @@ Having a understanding of the different states a package can be helpful
 in understanding package development.
 :::
 
-## Package states
-
-![](images/installation.png){fig-alt="schematic of package states and the functions that move them between states. One the horizontal axis: source, bundle, binary, installed, in memory. One the vertical axis the functions install.packages, R CMD install, install, build, install_github"}
-
-::: aside
-Figure from [R Packages](https://r-pkgs.org/) [@wickham2020]
-:::
 
 ## Package states
 
@@ -368,7 +318,7 @@ Do not nest inside another RStudio project, R package or git repo.
 🎬 Create a package:
 
 ```{r}
-usethis::create_package("~/Desktop/mypackage")
+usethis::create_package("mypackage")
 ```
 
 ::: aside
@@ -423,7 +373,7 @@ continued.....
 
 What happens when we run `create_package()`?
 
--   `mypackage.Rproj` is the file that makes this directory an RStudio
+-   `mypackage.Rproj` makes this directory an RStudio
     Project.
 
 -   `DESCRIPTION` provides metadata about your package.
@@ -431,9 +381,8 @@ What happens when we run `create_package()`?
 -   The `R/` directory is where we will put `.R` files with function
     definitions.
 
--   `NAMESPACE` declares the functions your package exports for external
-    use and the external functions your package imports from other
-    packages.
+-   `NAMESPACE` declares the functions your package exports and 
+     the functions it imports from other packages.
 
 ::: aside
 continued.....
