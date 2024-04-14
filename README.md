@@ -5,7 +5,7 @@ Talk given for
 -   [Research Coding Club](https://researchcodingclub.github.io/), at
     the University of York, UK
 
-Slides: [You can make an R package too!](https://bit.ly/3mma-bio-pkg)
+Slides: [You can make an R package too!](https://bit.ly/3mma-pkg)
 
 Based on
 
